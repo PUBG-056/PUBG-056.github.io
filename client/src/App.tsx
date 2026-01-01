@@ -11,7 +11,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
-      <Route path="/article/:id" component={Article} />
+      <Route path="/article/:slug" component={Article} />
       <Route path="/category/:category" component={Home} />
       <Route component={NotFound} />
     </Switch>
@@ -21,10 +21,9 @@ function Router() {
 function App() {
   return (
     <TooltipProvider>
-        <Toaster />
-        <Router />
-      </TooltipProvider>
-    
+      <Toaster />
+      <Router />
+    </TooltipProvider>
   );
 }
 

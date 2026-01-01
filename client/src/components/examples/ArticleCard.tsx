@@ -12,6 +12,7 @@ export default function ArticleCardExample() {
         date="2025-01-10"
         readTime="6 分鐘"
         imageUrl={gamingImage}
+        slug="RGB-機械鍵盤選購指南-2025-年度最佳推薦"
       />
     </div>
   );

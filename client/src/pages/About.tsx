@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Gamepad2, Cpu, Microscope, Code } from "lucide-react";
-import authorImage from '@assets/generated_images/Author_profile_photo_a4259f31.png';
 
 export default function About() {
   const skills = [
@@ -41,7 +40,7 @@ export default function About() {
                     <div className="relative">
                       <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-xl opacity-30" />
                       <img
-                        src={authorImage}
+                        src="/attached_assets/generated_images/Author_profile_photo_a4259f31.png"
                         alt="李泓德"
                         className="relative w-48 h-48 rounded-full object-cover border-4 border-card"
                         data-testid="img-author"
