@@ -11,6 +11,7 @@ interface ArticleCardProps {
   date: string;
   readTime: string;
   imageUrl: string;
+  slug: string;
 }
 
 export default function ArticleCard({
@@ -21,6 +22,7 @@ export default function ArticleCard({
   date,
   readTime,
   imageUrl,
+  slug,
 }: ArticleCardProps) {
   const categoryColors: Record<string, string> = {
     遊戲: "bg-primary text-primary-foreground",
@@ -29,7 +31,7 @@ export default function ArticleCard({
   };
 
   return (
-    <Link href={`/article/${id}`} data-testid={`link-article-${id}`}>
+    <Link href={`/article/${slug}`} data-testid={`link-article-${id}`}>
       <Card className="overflow-hidden hover-elevate active-elevate-2 transition-all cursor-pointer h-full flex flex-col">
         <div className="relative aspect-video overflow-hidden">
           <img
